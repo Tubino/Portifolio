@@ -2,18 +2,9 @@ import { ExternalLink, Github, ArrowRight } from "lucide-react";
 
 
 const projects = [
+    
     {
         id: 1,
-        title: "Projeto Favoritos do Github",
-        description: "Página web interativa que permite buscar e adicionar usuários do GitHub à sua lista de favoritos.",
-        image: "/projects/Github.png",
-        tags: ["JS", "HTML", "CSS", "Git"],
-        demoUrl: "#",
-        githubUrl: "https://github.com/Tubino/Github-Favorites",
-    },
-
-    {
-        id: 2,
         title: "Projeto Lucky Draw",
         description: "Aplicação responsiva de um sorteador de números onde o usuário seleciona quantos números quer sortear.",
         image: "/projects/lucky_draw.png",
@@ -21,15 +12,25 @@ const projects = [
         demoUrl: "https://lucky-draw-2025.netlify.app/",
         githubUrl: "https://github.com/Tubino/Lucky-Draw", 
     },
-
+    
     {
-        id: 3,
+        id: 2,
         title: "Project Lista de compras",
         description: "Site responsivo onde os usuários podem gerenciar itens adicionando e removendo-os.",
         image: "/projects/shopping_list.png",
         tags: ["JS", "HTML", "CSS", "Figma"],
         demoUrl: "https://tubino.github.io/Shopping-list/",
         githubUrl: "https://github.com/Tubino/Shopping-list",
+    },
+
+    {
+        id: 3,
+        title: "Projeto Favoritos do Github",
+        description: "Página web interativa que permite buscar e adicionar usuários do GitHub à sua lista de favoritos.",
+        image: "/projects/Github.png",
+        tags: ["JS", "HTML", "CSS", "Git"],
+        demoUrl: "#",
+        githubUrl: "https://github.com/Tubino/Github-Favorites",
     }
 ]
 
@@ -51,11 +52,11 @@ export const ProjectsSection = () => {
                             key={key} 
                             className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
                         >
-                            <div className="overflow-hidden h-44">
-                                <img src={project.image} alt={project.title} className="w-full h-[80] object-cover transition-transform duration-500 group-hover:scale-110"/>
+                            <div className="overflow-hidden h-50">
+                                <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"/>
                             </div>
 
-                            <div className="p-6">
+                            <div className="p-5">
                                 <div className="flex flex-wrap gap-2 mb-2">
                                     {project.tags.map((tag) => (
                                         <span className="px-2 py-1 border text-sm font-medium rounded-full bg-primary/20 text-secondary-foreground opacity-90">

@@ -11,16 +11,14 @@ export const ContactSection = () => {
     const formRef = useRef(null);
 
     // Configuração do emailjs
-
+    const SERVICE_ID = "service_lke13fv";
+    const TEMPLATE_ID = "template_9ozp9ae";
+    const PUBLIC_KEY = "KXMBy1XAurkpUHvry";
 
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        sendForm(
-            import.meta.env.VITE_SERVICE_ID, 
-            import.meta.env.VITE_TEMPLATE_ID, 
-            e.target, 
-            import.meta.env.VITE_PUBLIC_KEY);
+        sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY);
 
         setIsSubmitting(true);
 
