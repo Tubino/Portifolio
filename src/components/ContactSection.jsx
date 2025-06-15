@@ -11,7 +11,7 @@ export const ContactSection = () => {
     const formRef = useRef(null);
 
     // Configuração do emailjs
-    const SERVICE_ID = "service_lke13fv";
+    const SERVICE_ID = "service_o3xnugg";
     const TEMPLATE_ID = "template_9ozp9ae";
     const PUBLIC_KEY = "KXMBy1XAurkpUHvry";
 
